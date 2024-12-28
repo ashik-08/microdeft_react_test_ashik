@@ -38,7 +38,7 @@ const Navbar = () => {
               return (
                 <li
                   key={idx}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                  className="text-gray-700 hover:text-primary-600 transition-colors duration-300"
                 >
                   <Link to={item.path} className="block">
                     {item.title}
@@ -51,15 +51,15 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/login"
-                  className="block py-3 text-center text-gray-700 hover:text-blue-600 border rounded-lg md:border-none transition-colors duration-300"
+                  className="block py-3 text-center text-gray-700 hover:text-primary-600 border rounded-lg md:border-none transition-colors duration-300"
                 >
                   Log in
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/registration"
-                  className="block py-3 px-4 font-medium text-center text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 active:shadow-none rounded-lg shadow md:inline transition-colors duration-300"
+                  to="/register"
+                  className="block py-3 px-4 font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow md:inline transition-colors duration-300"
                 >
                   Sign up
                 </Link>
