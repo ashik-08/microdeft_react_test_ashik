@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import logoImg from "../../../assets/logo.png";
 import CloseIcon from "../../SVG/CloseIcon";
 import MenuIcon from "../../SVG/MenuIcon";
@@ -51,9 +51,14 @@ const Navbar = () => {
                   key={idx}
                   className="text-gray-700 hover:text-primary-600 transition-colors duration-300"
                 >
-                  <Link to={item.path} className="block">
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      isActive && "text-primary-600 font-semibold"
+                    }
+                  >
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })}
@@ -63,7 +68,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={handleLogout}
-                    className="block py-3 px-4 font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow md:inline transition-colors duration-300"
+                    className="w-full py-3 px-4 font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow md:inline transition-colors duration-300"
                   >
                     Log out
                   </button>
