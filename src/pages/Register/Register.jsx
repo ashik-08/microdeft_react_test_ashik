@@ -38,7 +38,7 @@ const Register = () => {
       const responseData = await response.json();
 
       if (
-        responseData.status &&
+        responseData.status === true &&
         responseData.status_class === "success" &&
         responseData.status_code === 200
       ) {
@@ -150,13 +150,13 @@ const Register = () => {
               <div>
                 <button
                   type="submit"
-                  className="mt-4 w-full bg-primary-600 text-white md:text-lg font-semibold p-2.5 rounded-md hover:bg-primary-700 transition"
+                  className="mt-2.5 w-full bg-primary-600 text-white md:text-lg font-semibold p-2.5 rounded-md hover:bg-primary-700 transition"
                 >
                   Sign Up
                 </button>
               </div>
             </form>
-            <p className="text-center my-4">
+            <p className="text-center mt-4">
               Already have an account?{" "}
               <Link
                 to="/login"
