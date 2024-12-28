@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router";
 import MainLayout from "./layout/MainLayout";
+import AddCourse from "./pages/AddCourse/AddCourse";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
@@ -10,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         {/* <Route index element={<HomePage />} /> */}
-        {/* <Route path="add-course" element={<AddCourse />} /> */}
+        <Route path="add-course" element={<AddCourse />} />
         {/* <Route path="course-list" element={<CourseList />} /> */}
       </Route>
       <Route path="*" element={<ErrorPage />} />
