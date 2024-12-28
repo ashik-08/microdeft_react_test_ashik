@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import MainLayout from "./layout/MainLayout";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 // import HomePage from "./pages/HomePage/HomePage";
 
@@ -14,6 +15,7 @@ function App() {
       </Route>
       <Route path="*" element={<ErrorPage />} />
       <Route path="register" element={<Register />} />
+      <Route path="login" element={<Login />} />
     </Routes>
   );
 }
