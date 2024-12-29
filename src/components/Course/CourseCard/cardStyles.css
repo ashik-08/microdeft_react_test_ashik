@@ -1,0 +1,131 @@
+.course-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.course-card-content {
+  padding: 24px 24px 12px;
+}
+
+.course-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+.course-card-description {
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.course-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.course-card-badge {
+  font-size: 0.9rem;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.8px white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.course-card-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card-instructor {
+  background-color: #f3f4f6;
+  color: #374151;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-card-instructor:hover {
+  background-color: #e2e8f0;
+  color: #151515;
+}
+
+.course-card-icon {
+  font-size: 1.2rem;
+  color: #4b5563;
+}
+
+.course-card-author {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.course-card-button {
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: none;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-card-button:hover {
+  background-color: #257bec;
+  color: white;
+  font-weight: 600;
+}
+
+.course-card-footer {
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.course-card-footer-para {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.course-card-date {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.course-card-date:hover {
+  color: #257bec;
+}
