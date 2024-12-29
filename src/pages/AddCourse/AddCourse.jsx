@@ -59,8 +59,8 @@ const AddCourse = () => {
           <div className="space-y-2">
             <label className="text-lg font-medium">Badge Color</label>
             <input
-              className="w-full p-2.5 rounded-md border border-gray-300 focus:outline-primary-600"
-              type="text"
+              className="w-full h-12"
+              type="color"
               name="badge_color"
               placeholder="Enter badge color"
               required
