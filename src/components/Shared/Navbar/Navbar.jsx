@@ -54,7 +54,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      isActive && "text-primary-600 font-semibold"
+                      isActive ? "text-primary-600 font-semibold" : ""
                     }
                   >
                     {item.title}
