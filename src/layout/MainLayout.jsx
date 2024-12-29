@@ -4,13 +4,13 @@ import Navbar from "../components/Shared/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="min-h-[calc(100vh-193px)] sm:min-h-[calc(100vh-184px)]">
+      <main className="flex-grow">
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
